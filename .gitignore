@@ -26,3 +26,5 @@ elixir_tutorial-*.tar
 .elixir_ls
 cover
 .formatter.exs
+
+./idea
