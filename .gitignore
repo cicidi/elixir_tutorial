@@ -27,4 +27,4 @@ elixir_tutorial-*.tar
 cover
 .formatter.exs
 
-./idea
+.idea/*

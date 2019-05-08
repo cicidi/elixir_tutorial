@@ -14,8 +14,10 @@ defmodule ElixirTutorial.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      IO.puts("hello world123"),
-      [world],
+      [startApplication()],
+
+      #import module and function
+      [ElixirTutorial.numberOperate()],
       extra_applications: [:logger]
     ]
   end
@@ -29,7 +31,7 @@ defmodule ElixirTutorial.MixProject do
     ]
   end
 
-  def world do
-    IO.puts("hello world function")
+  def startApplication do
+    IO.puts("startApplication")
   end
 end

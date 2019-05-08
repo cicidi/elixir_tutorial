@@ -15,4 +15,8 @@ defmodule ElixirTutorial do
   def hello do
     :world
   end
+
+  def numberOperate do
+    IO.puts(div(10, 2))
+  end
 end
