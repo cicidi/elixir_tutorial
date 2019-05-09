@@ -47,11 +47,18 @@ defmodule ElixirTutorialChapterTwo do
     IO.puts("if add is a function with 1 arguments = #{is_function(add, 1)}")
   end
 
+  def anonymousNestedFunction do
+    add = fn a, b -> a + b end
+    double = fn a -> add.(a, a) end
+    IO.puts(" double func = #{double.(2)}")
+  end
+
   def run do
     numberOperate()
     binary()
     isBinary()
     atom()
     anonymousFunction()
+    anonymousNestedFunction()
   end
 end
