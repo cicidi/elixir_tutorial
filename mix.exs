@@ -17,8 +17,7 @@ defmodule ElixirTutorial.MixProject do
       [startApplication()],
 
       #import module and function
-      [ElixirTutorialChapterTwo.numberOperate()],
-      [ElixirTutorialChapterTwo.binary()],
+      [ElixirTutorialChapterTwo.run()],
       extra_applications: [:logger]
     ]
   end
