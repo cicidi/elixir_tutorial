@@ -39,10 +39,19 @@ defmodule ElixirTutorialChapterTwo do
     IO.puts("hello #{worldValue}")
   end
 
+  def anonymousFunction do
+    add = fn a, b -> a + b end
+    IO.puts("run add func 1+2 = #{add.(1, 2)}")
+    IO.puts("if add is a function =  #{is_function(add)}")
+    IO.puts("if add is a function with 2 arguments =  #{is_function(add, 2)}")
+    IO.puts("if add is a function with 1 arguments = #{is_function(add, 1)}")
+  end
+
   def run do
     numberOperate()
     binary()
     isBinary()
     atom()
+    anonymousFunction()
   end
 end
