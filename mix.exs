@@ -19,6 +19,7 @@ defmodule ElixirTutorial.MixProject do
       #import module and function
       [ElixirTutorialChapterTwo.run()],
       [ElixirTutorialChapterThree.run()],
+      [ElixirTutorialChapterFour.run()],
       extra_applications: [:logger]
     ]
   end
