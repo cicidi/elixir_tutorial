@@ -20,6 +20,7 @@ defmodule ElixirTutorial.MixProject do
       [ElixirTutorialChapterTwo.run()],
       [ElixirTutorialChapterThree.run()],
       [ElixirTutorialChapterFour.run()],
+      [ElixirTutorialChapterFive.run()],
       extra_applications: [:logger]
     ]
   end
