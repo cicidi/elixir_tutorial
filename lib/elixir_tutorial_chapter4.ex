@@ -41,7 +41,7 @@ defmodule ElixirTutorialChapterFour do
     IO.puts("========expecting error here===========")
 
     x = 1
-    # ^x = 2 #IO.puts("========expecting error here===========")
+   # ^x = 2 #IO.puts("========expecting error here===========")
 
 
   end
