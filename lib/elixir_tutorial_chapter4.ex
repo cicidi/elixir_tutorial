@@ -40,6 +40,10 @@ defmodule ElixirTutorialChapterFour do
     #    {x, x} = {1, 2}
     IO.puts("========expecting error here===========")
 
+    x = 1
+    # ^x = 2 #IO.puts("========expecting error here===========")
+
+
   end
 
   def run() do
