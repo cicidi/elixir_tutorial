@@ -89,6 +89,7 @@ defmodule ElixirTutorialChapterTwo do
 
 
   def run do
+    IO.puts("=============Charpter 2 test case========================")
     numberOperate()
     binary()
     isBinary()
