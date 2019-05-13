@@ -29,14 +29,24 @@ defmodule ElixirTutorialChapterSeven do
 
   def appendToList(list) do
     list = list ++ [{:c, 3}]
+    IO.puts("list equal to original -> #{list == [a: 1, b: 2]}")
     IO.puts("append :c to list, new list size -> #{length(list)}")
+    list = list ++ [{:d, 4}]
+    IO.puts("append :d to list, new list size -> #{length(list)}")
+    IO.puts("value d is -> #{list[:c]}")
   end
 
+  def replaceValue(list) do
+    list = list ++ [{:d, 5}]
+    IO.puts("replace value of d from 4 to -> #{list[:d]}")
+
+  end
   def run() do
     IO.puts("=============Chapter 7 test case========================")
     list = creatMapping()
     readList(list)
     appendToList(list)
+    replaceValue(list)
   end
 
 end
