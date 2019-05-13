@@ -1,4 +1,5 @@
 defmodule ElixirTutorialChapterTwo do
+  #  use Application
   @moduledoc """
   Documentation for ElixirTutorial.
   """
@@ -88,8 +89,8 @@ defmodule ElixirTutorialChapterTwo do
   end
 
 
-  def run do
-    IO.puts("=============Charpter 2 test case========================")
+  def run  do
+    IO.puts("=============Chapter 2 test case========================")
     numberOperate()
     binary()
     isBinary()
@@ -99,6 +100,7 @@ defmodule ElixirTutorialChapterTwo do
     linkedList()
     tuples()
     readFile()
+    IO.puts("hello worlds")
   end
 
 

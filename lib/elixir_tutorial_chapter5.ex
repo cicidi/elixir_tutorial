@@ -67,7 +67,7 @@ defmodule ElixirTutorialChapterFive do
     end
   end
   def run() do
-    IO.puts("=============Charpter 5 test case========================")
+    IO.puts("=============Chapter 5 test case========================")
     caseFunc()
     caseFuncWithMatchOperator(1)
     caseFuncWithMatchOperator(10)

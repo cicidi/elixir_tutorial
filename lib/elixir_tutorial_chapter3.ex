@@ -23,7 +23,7 @@ defmodule ElixirTutorialChapterThree do
 
   def run() do
 
-    IO.puts("=============Charpter 3 test case========================")
+    IO.puts("=============Chapter 3 test case========================")
     connectOperator()
   end
 

@@ -14,13 +14,8 @@ defmodule ElixirTutorial.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      [startApplication()],
-
+      mod: {ApplicationTest, []},
       #import module and function
-      [ElixirTutorialChapterTwo.run()],
-      [ElixirTutorialChapterThree.run()],
-      [ElixirTutorialChapterFour.run()],
-      [ElixirTutorialChapterFive.run()],
       extra_applications: [:logger]
     ]
   end
@@ -34,7 +29,4 @@ defmodule ElixirTutorial.MixProject do
     ]
   end
 
-  def startApplication do
-    IO.puts("startApplication")
-  end
 end

@@ -47,7 +47,7 @@ defmodule ElixirTutorialChapterFour do
   end
 
   def run() do
-    IO.puts("=============Charpter 4 test case========================")
+    IO.puts("=============Chapter 4 test case========================")
     modeMatch()
   end
 
