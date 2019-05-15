@@ -22,6 +22,7 @@ defmodule ApplicationTest do
     ElixirTutorialChapterFive.run()
     ElixirTutorialChapterSeven.run()
     ElixirTutorialChapterEight.run()
+    ElixirTutorialChapterNine.run()
 
     opts = [strategy: :one_for_one, name: A.Supervisor]
     Supervisor.start_link(children, opts)
