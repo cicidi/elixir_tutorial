@@ -33,12 +33,22 @@ defmodule ElixirTutorialChapterNine do
       sum
     end
 
-    def double([head | tail])do
-
+    def double_each([head | tail]) do
+      [head * 2 | double_each(tail)]
     end
 
-    def double([])do
+    def double_each([]) do
       []
+    end
+
+    def sum_by_enum() do
+      sum = Enum.reduce([1, 2, 3], 0, fn (x, acc) -> x + acc end)
+      IO.puts("sum by enum #{sum}")
+    end
+
+    def double_by_sum()do
+      double = Enum.map([1, 2, 3], &(&1 * 2))
+      IO.puts("#{hd(double)}")
     end
   end
 
@@ -51,6 +61,7 @@ defmodule ElixirTutorialChapterNine do
 
     IO.puts "do sum #{Math.accumulate([1, 2, 3], 0)}"
     IO.puts "call Math module in other files #{ElixirTutorialChapterEight.Math.aPublicFunction()}"
-
+    Math.sum_by_enum()
+    Math.double_by_sum()
   end
 end
