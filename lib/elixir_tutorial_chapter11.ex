@@ -31,6 +31,27 @@ defmodule ElixirTutorialChapterEleven do
         1_000 -> IO.puts "nothing receive after 1s"
       end
     end
+
+    def spank_link_test do
+      result = spawn fn -> raise "oops" end
+      IO.puts "oops #{inspect result}"
+    end
+  end
+
+  defmodule KV do
+    def start_link do
+      Task.start_link(fn -> loop(%{}) end)
+    end
+
+    defp loop(map) do
+      receive do
+        {:get, key, caller} ->
+          send caller, Map.get(map, key)
+          loop(map)
+        {:put, key, value} ->
+          loop(Map.put(map, key, value))
+      end
+    end
   end
 
   def run() do
@@ -45,5 +66,6 @@ defmodule ElixirTutorialChapterEleven do
     end
     IO.puts "receive message for 3nd time after send message to pid : #{inspect parent}"
     ProcessTest.receive()
+    ProcessTest.spank_link_test()
   end
 end
