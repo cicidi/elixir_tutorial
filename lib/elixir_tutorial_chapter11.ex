@@ -66,6 +66,6 @@ defmodule ElixirTutorialChapterEleven do
     end
     IO.puts "receive message for 3nd time after send message to pid : #{inspect parent}"
     ProcessTest.receive()
-    ProcessTest.spank_link_test()
+#    ProcessTest.spank_link_test()
   end
 end
