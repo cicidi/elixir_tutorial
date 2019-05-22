@@ -34,6 +34,7 @@ defmodule Example.Application do
     ElixirTutorialChapterTwelve.run()
     ElixirTutorialChapterThirteen.run()
     ElixirTutorialChapterFourteen.run()
+    ElixirTutorialChapterFifteen.run()
 
     opts = [strategy: :one_for_one, name: Example.Supervisor]
 

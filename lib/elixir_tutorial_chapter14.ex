@@ -28,7 +28,7 @@ defmodule ElixirTutorialChapterFourteen do
   # read file
   def run() do
 
-    IO.puts("=============Chapter 13 test case========================")
+    IO.puts("=============Chapter 14 test case========================")
     IO.inspect("get ip address from initial object -> #{MyServer.get_initial_state()}")
 
   end
