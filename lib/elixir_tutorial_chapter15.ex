@@ -36,7 +36,7 @@ defmodule ElixirTutorialChapterFifteen do
     walter = Map.put(%User{}, :name, "Kurt")
     IO.puts(walter.name)
     IO.inspect(%Product{})
-    IO.inspect(%Car{make: "Byton"})
+    IO.inspect(%Car{make: "K-BYTE"})
 
   end
 end
